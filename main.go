@@ -24,7 +24,7 @@ func HandleRequest(ctx context.Context, req events.APIGatewayProxyRequest) (even
 		return errorResponse, nil
 	}
 	return events.APIGatewayProxyResponse{
-		Body:       "Welcome to λ Mr." + bodyData.Name,
+		Body:       "Welcome to λ' Mr." + bodyData.Name,
 		StatusCode: 200,
 	}, nil
 }
