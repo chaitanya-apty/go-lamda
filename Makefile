@@ -1,4 +1,4 @@
 linux:
-	GOOS=linux go build/main main.go
+	GOOS=linux go build -o build/main main.go
 package:
-	zip function.zip main
+	zip function.zip build/main
